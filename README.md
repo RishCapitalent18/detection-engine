@@ -1,6 +1,6 @@
-# Detection Engineering Lab
+# Rule-based detections (MITRE)
 
-A small detection-engineering project: rule-based detections mapped to MITRE
+Rule-based detections mapped to MITRE
 ATT&CK over synthetic security telemetry, an anomaly layer for novel signals, an
 honest fidelity evaluation against labeled ground truth, and an alert-triage queue.
 
@@ -86,4 +86,4 @@ detection-engine/
 +-- reports/                    # committed artifacts the dashboard reads
 ```
 
-> Telemetry is fully synthetic and generated locally. No real security data is used.
+

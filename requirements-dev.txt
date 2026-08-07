@@ -1,0 +1,7 @@
+# Full pipeline + tests. openai is optional (only used if OPENAI_API_KEY is set
+# to draft alert summaries with an LLM; a template is used otherwise).
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+pytest>=7.4
+# openai>=1.0

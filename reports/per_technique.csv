@@ -1,0 +1,6 @@
+technique,name,cases,detected,recall
+T1041,Exfiltration,5,5,1.0
+T1059,Command and Scripting,12,12,1.0
+T1078,Valid Accounts (Impossible Travel),6,6,1.0
+T1110,Brute Force,10,9,0.9
+T1548,Privilege Escalation,7,7,1.0
